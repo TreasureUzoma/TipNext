@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TipNext</title>
+    <link href="/style/index.css" rel="stylesheet">
+    <link href="/style/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <nav>
+     <span class="search">
+       <input id="searchInput" oninput="search()" type="text" placeholder="Search for Tips">
+       <i onclick="search()" class="fa fa-search"></i>
+     </span>
+     <b class="text-logo">TipNext</b>
+   </nav>
+   <main>
+     <button class="create-post" onclick="window.location.href ='createpost.html'"><i class="fa fa-plus"></i></button>
+          <section>
+       <div class="post">
+         <h4 class="tip-title">Use Type Hints in PHP</h4>
+         <p class="tip-description">
+           Improve code readability and catch type-related errors with type hints in PHP.
+         </p>
+         <span class="tip-class">#php</span>
+       </div>
+       <div class="post">
+         <h4 class="tip-title">Leverage Generics in Java</h4>
+         <p class="tip-description">
+           Write flexible and reusable code with generics in Java, reducing type-related errors.
+         </p>
+         <span class="tip-class">#java</span>
+       </div>
+       <div class="post">
+         <h4 class="tip-title">Optimize Database Queries with Indexing in Firebase</h4>
+         <p class="tip-description">
+           Improve query performance and reduce latency with indexing in Firebase Realtime Database.
+         </p>
+         <span class="tip-class">#firebase</span>
+       </div>
+       <div class="post">
+         <h4 class="tip-title">Master Object Destructuring</h4>
+         <p class="tip-description">
+           Extract object properties efficiently with destructuring, simplifying code and reducing errors.
+         </p>
+         <span class="tip-class">#javascript</span>
+       </div>
+       <div class="post">
+         <h4 class="tip-title">Use Hooks in React for State Management</h4>
+         <p class="tip-description">
+           Simplify state management and side effects with hooks in React, making code more readable.
+         </p>
+         <span class="tip-class">#react</span>
+       </div>
+       <div class="post">
+         <h4 class="tip-title">Take Advantage of Async-Await in C#</h4>
+         <p class="tip-description">
+           Write asynchronous code that's easier to read and maintain with async-await in C#.
+         </p>
+         <span class="tip-class">#csharp</span>
+       </div>
+       <div class="post">
+         <h4 class="tip-title">Use Coroutines in Flutter for Asynchronous Programming</h4>
+         <p class="tip-description">
+           Simplify asynchronous programming with coroutines in Flutter, improving app responsiveness.
+         </p>
+         <span class="tip-class">#flutter</span>
+       </div>
+       <div class="post">
+         <h4 class="tip-title">Leverage Template Literals</h4>
+         <p class="tip-description">
+           Use template literals for easy string interpolation and formatting, making code more readable.
+         </p>
+         <span class="tip-class">#javascript</span>
+       </div>
+       <div class="post">
+         <h4 class="tip-title">Master Dependency Injection in Vue.js</h4>
+         <p class="tip-description">
+           Write loosely coupled and testable code with dependency injection in Vue.js.
+         </p>
+         <span class="tip-class">#vue.js</span>
+       </div>
+       <div class="post">
+         <h4 class="tip-title">Use Server-Side Rendering in Next.js for SEO</h4>
+         <p class="tip-description">
+           Improve SEO and page load times with server-side rendering in Next.js.
+         </p>
+         <span class="tip-class">#next.js</span>
+       </div>
+       <div class="post">
+         <h4 class="tip-title">Use Const Instead of Let</h4>
+         <p class="tip-description">
+           Use `const` for variables that don't change, improving code readability and preventing bugs.
+         </p>
+         <span class="tip-class">#javascript</span>
+       </div>
+       <div class="post">
+         <h4 class="tip-title">Simplify Code with Arrow Functions</h4>
+         <p class="tip-description">
+           Replace traditional functions with concise arrow functions, reducing boilerplate code.
+         </p>
+         <span class="tip-class">#javascript</span>
+       </div>
+     </section>
+     <div id="noResultsFound" style="display:none;">No results found</div>
+   </main>
+   <footer>
+   </footer>
+   <script src="/script/main.js" type="text/javascript"></script>
+</body>
+</html>
