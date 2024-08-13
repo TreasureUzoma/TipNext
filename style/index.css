@@ -76,8 +76,11 @@ header {
     justify-content: center;
   }
   header {
-    margin-top: 75px;
-    height: 40vh;
+    margin-top: 85px;
+    height: 45vh;
+  }
+  .header-content-wrapper {
+    padding:0 35px;
   }
 }
 /* SVG spinner icon animation */
