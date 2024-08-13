@@ -3,6 +3,66 @@ nav .right {
   display: block;
   margin-top: -22px;
 }
+main {
+  margin: 85px 5px 0 5px;
+}
+label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: nobne;
+  color: #f0f0f0;
+}
 input[type="text"] {
-  padding: 10px;
+  padding: 10px 0;
+  color: #f0f0f0;
+  background: transparent;
+  border: none;
+  width: 280px;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #4C5A5D;
+}
+textarea {
+  width: 280px;
+  max-width: 280px;
+  color: #f0f0f0;
+  height: 100px;
+  max-height: 100px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #4C5A5D;
+}
+.post-btn {
+  background-color: #34AFCB;
+  font-size: 0.9rem;
+  margin: 15px 0;
+  padding: 14px 35px;
+  width: 280px;
+  border-radius: 10px;
+}
+.checkbox-group {
+  text-align: center;
+}
+.custom-checkbox {
+  display: inline-block;
+  padding: 10px 17px;
+  font-size: 0.6rem;
+  color: #333;
+  margin: 7px;
+  font-weight: bold;
+  background-color: #808E91;
+  border-radius: 10px;
+  border: 2px solid #808E91;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox[data-checked="true"] {
+  background-color: #34AFCB;
+  border-color: #34AFCB;
+  color: #111;
+}
+
+.custom-checkbox[data-checked="false"] {
+  background-color: #ccc;
+  border-color: #ccc;
 }
