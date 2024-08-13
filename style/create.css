@@ -9,7 +9,7 @@ main {
 label {
   font-weight: bold;
   font-size: 0.9rem;
-  display: nobne;
+  display: inline;
   color: #f0f0f0;
 }
 input[type="text"] {
@@ -65,4 +65,24 @@ textarea {
 .custom-checkbox[data-checked="false"] {
   background-color: #ccc;
   border-color: #ccc;
+}
+@media (min-width:768px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-wrap {
+    display: grid;
+    margin: 0 auto;
+    width: 500px;
+  }
+  textarea, input[type="text"] {
+    width: 50%;
+    max-width: 50%;
+    text-align: center;
+  }
+  label {
+    display: block;
+  }
 }
