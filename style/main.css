@@ -8,11 +8,15 @@ nav {
 .search{
   margin-top: -5px;
   float: right;
-  display: inline;
+  display: flex;
+  align-items: center;
   border: 1px solid #ccc;  
   width: 65%;
   margin-right: 0px;
   border-radius: 10px;
+}
+.search i {
+  float: right;
 }
 .search input {
   width: 70%;
@@ -75,4 +79,15 @@ main {
   font-weight: bold;
   font-size: 18px;
   margin-top: 40px;
+}
+@media(min-width: 768px) {
+  main {
+    padding: 0 35px;
+  }
+  .tip-description {
+    font-size: 0.9rem;
+  }
+  .search {
+    width: 200px;
+  }
 }
