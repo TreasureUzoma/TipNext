@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="/script/create.js" type="module"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Tip - TipNext</title>
     <link href="/style/index.css" rel="stylesheet">
@@ -11,19 +12,36 @@
 </head>
 <body>
    <nav>
-     <i class="fa fa-arrow-left"></i>
+     <i class="fa fa-arrow-left" onclick="window.history.back()"></i>
      <b class="right">Create Tip</b>
    </nav>
    <main>
      <label>Title</label><br>
      <input type="text" name="title" id="title" class="title" placeholder="Tip title"/>
      <label>Description</label><br>
-     <textarea type="text" name="title" id="title" class="title" placeholder="Description"></textarea>
+     <textarea type="text" name="title" id="description" class="title" placeholder="Tip description"></textarea>
+     <label>Select a tag</label> 
+       <div class="checkbox-group">
+         <span class="custom-checkbox" data-checked="false">Solidity</span>
+         <span class="custom-checkbox" data-checked="false">JavaScript</span>
+         <span class="custom-checkbox" data-checked="false">Java</span>
+         <span class="custom-checkbox" data-checked="false">Python</span>
+         <span class="custom-checkbox" data-checked="false">Vue.Js</span>
+         <span class="custom-checkbox" data-checked="false">Csharp</span>
+         <span class="custom-checkbox" data-checked="false">Next.Js</span>
+         <span class="custom-checkbox" data-checked="false">Flutter</span>
+         <span class="custom-checkbox" data-checked="false">PHP</span>
+         <span class="custom-checkbox" data-checked="false">C++</span>
+         <span class="custom-checkbox" data-checked="false">React</span>
+         <span class="custom-checkbox" data-checked="false">Kotlin</span>
+         <span class="custom-checkbox" data-checked="false">Rust</span>
+         <span class="custom-checkbox" data-checked="false">Firebase</span>
+       </div>     
      <br>
-     <button>Post</button>
+     <center><button id="post" class="post-btn">Post</button></center>
    </main>
    <footer>
    </footer>
-   <script src="/script/main.js" type="text/javascript"></script>
+   
 </body>
 </html>
