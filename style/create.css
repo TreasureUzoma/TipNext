@@ -78,8 +78,8 @@ textarea {
     width: 500px;
   }
   textarea, input[type="text"] {
-    width: 50%;
-    max-width: 50%;
+    width: 90%;
+    max-width: 90%;
     text-align: center;
   }
   label {
