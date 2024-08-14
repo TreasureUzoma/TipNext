@@ -4,7 +4,7 @@ import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.g
 // Wait for the DOM to fully load
 document.addEventListener('DOMContentLoaded', function() {
   const postButton = document.getElementById('post');
-  const spamWords = ['spam', 'scam', 'fake', 'pussy', 'dick', 'whatsapp', 'wa.me', 'telegram', 'please', 'sex', 'fuck', 't.me', 'phone number', 'mad', 'crazy', 'werey', 'ass', 'foolish', 'opay', 'palmpay', 'send', 'pls', '081', '+234', '080', '+91', 'bitcoin', 'wallet', 'giveaway']; // list of spam words
+  const spamWords = [' spam ', ' scam ', ' fake ', ' pussy ', ' dick ', ' whatsapp ', ' wa.me ', ' telegram ', ' please ', ' sex ', ' fuck ', ' t.me ', ' phone number ', ' mad ', ' crazy ', ' werey ', ' ass ', ' foolish ', 'opay ', 'palmpay ', 'send ', 'pls ', '081', '+234', '080', '+91', 'bitcoin ', 'wallet ', 'giveaway ']; // list of spam words
 
   // Firebase configuration
   const firebaseConfig = {
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
       alert("Your post contains spam words and cannot be posted.");
       return;
     }
-
+    postButton.textContent ="Posting..."
     // Prepare the tip data (keeping original case)
     const tipData = {
       title: title, // Original case
@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Add a new document with a generated ID
       const docRef = await addDoc(collection(db, "tips"), tipData);
       console.log("Tip successfully posted with ID: ", docRef.id);
+      postButton.textContent ="Post"
       alert("Tip successfully posted!");
 
       // Optionally clear the form after posting
@@ -83,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.custom-checkbox').forEach(checkbox => checkbox.setAttribute('data-checked', 'false'));
     } catch (error) {
       console.error("Error adding tip: ", error);
+      postButton.textContent ="Post"
       alert("Error posting tip, please try again.");
     }
   });

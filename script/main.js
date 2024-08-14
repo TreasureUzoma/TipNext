@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async function() {
       postElement.innerHTML = `
         <h4 class="tip-title">${data.title}</h4>
         <p class="tip-description">${data.description}</p>
-        ${data.tags.map(tag => `<span class="tip-class">#${tag}</span>`).join('')}
+        ${data.tags.map(tag => `<span class="tip-class">#${tag.toLowerCase()}</span>`).join('')}
       `;
       postContainer.appendChild(postElement);
     });
